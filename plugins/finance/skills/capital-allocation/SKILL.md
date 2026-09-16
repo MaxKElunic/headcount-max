@@ -52,6 +52,13 @@ Compare realized outcomes against the approved case, and make it routine rather 
 nobody looks back, forecasts drift optimistic because optimism is rewarded at approval and never
 tested afterwards.
 
+## Sources
+
+`references/sources.md` in this skill lists the outside authorities that settle the questions
+here — what each one is authoritative for, and what you may do with it. Check them before
+answering on anything they cover, and cite what you used. Most are free to read and not free
+to reproduce; the use note on each is binding.
+
 ## Never
 
 - Include sunk cost in a forward case.

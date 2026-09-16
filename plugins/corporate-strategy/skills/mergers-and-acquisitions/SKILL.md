@@ -65,6 +65,13 @@ The predictable value destroyers are attrition of the people you bought, custome
 transition, and a stalled integration that leaves two of everything indefinitely. Each is
 foreseeable and each is planned around, or it is not.
 
+## Sources
+
+`references/sources.md` in this skill lists the outside authorities that settle the questions
+here — what each one is authoritative for, and what you may do with it. Check them before
+answering on anything they cover, and cite what you used. Most are free to read and not free
+to reproduce; the use note on each is binding.
+
 ## Never
 
 - Proceed with a thesis that changed to fit the target.

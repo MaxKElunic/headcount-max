@@ -40,7 +40,8 @@ PAIRS = {
     "prioritising": "prioritizing", "prioritisation": "prioritization",
     "optimise": "optimize", "optimised": "optimized", "optimising": "optimizing",
     "optimisation": "optimization",
-    "recognise": "recognize", "recognised": "recognized", "recognising": "recognizing",
+    "recognise": "recognize", "recognises": "recognizes",
+    "recognised": "recognized", "recognising": "recognizing",
     "recognisable": "recognizable",
     "realise": "realize", "realised": "realized", "realising": "realizing",
     "realisation": "realization",
@@ -84,7 +85,10 @@ PAIRS = {
 }
 WORD = re.compile(r"\b(" + "|".join(sorted(PAIRS, key=len, reverse=True)) + r")\b", re.I)
 
-SKIP_DIRS = {".git", "node_modules", "__pycache__"}
+# `dist` holds emitted vertical repositories, which are generated output rather than content of
+# this repository — checking them here reports the same finding twice and reports it against a
+# path nobody can fix. The emitted tree runs this check itself, where a finding is actionable.
+SKIP_DIRS = {".git", "node_modules", "__pycache__", "dist"}
 # LICENSE is the canonical MIT text and is never rewritten. This file lists British spellings by
 # definition, so it excludes itself the way check-provenance.py does.
 SKIP_FILES = {"LICENSE", os.path.basename(__file__)}

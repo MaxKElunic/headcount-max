@@ -54,6 +54,13 @@ cycle. Findings here need qualified review before action.
   counteroffer is right, it should reflect a correction you should have already made.
 - Every exception is a precedent. Document the reasoning, because you will be asked to repeat it.
 
+## Sources
+
+`references/sources.md` in this skill lists the outside authorities that settle the questions
+here — what each one is authoritative for, and what you may do with it. Check them before
+answering on anything they cover, and cite what you used. Most are free to read and not free
+to reproduce; the use note on each is binding.
+
 ## Tooling
 
 Benchmark data is the purchase that matters, and it is where the scale tier is real: free and

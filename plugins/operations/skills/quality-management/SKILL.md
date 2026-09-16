@@ -10,7 +10,7 @@ process that produced the work, so that is where the effort belongs.
 
 ## Define quality as the customer experiences it
 
-A standard nobody outside the team recognises is a preference. State quality in terms a customer
+A standard nobody outside the team recognizes is a preference. State quality in terms a customer
 would agree with: correct, on time, complete, usable — with a threshold, so conformance is a fact
 rather than an opinion.
 

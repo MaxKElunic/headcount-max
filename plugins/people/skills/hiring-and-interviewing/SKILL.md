@@ -50,6 +50,13 @@ is missing, get it — an extra conversation is cheap compared to a mis-hire.
 Ambiguity means no. The cost of a bad hire is far larger and lasts far longer than the cost of a
 longer search, and it is borne by the team, not the hiring manager.
 
+## Sources
+
+`references/sources.md` in this skill lists the outside authorities that settle the questions
+here — what each one is authoritative for, and what you may do with it. Check them before
+answering on anything they cover, and cite what you used. Most are free to read and not free
+to reproduce; the use note on each is binding.
+
 ## Tooling
 
 Applicant tracking, roughly by scale: Workable, JazzHR or the hiring module of an all-in-one HRIS

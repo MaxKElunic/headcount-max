@@ -66,6 +66,13 @@ them are checked first in a dispute, because they are the cheapest thing to chec
 Set retention by the longest applicable requirement, and suspend disposal entirely when litigation
 or an investigation is reasonably anticipated.
 
+## Sources
+
+`references/sources.md` in this skill lists the outside authorities that settle the questions
+here — what each one is authoritative for, and what you may do with it. Check them before
+answering on anything they cover, and cite what you used. Most are free to read and not free
+to reproduce; the use note on each is binding.
+
 ## Never
 
 - Classify a role by title, by what the person prefers, or by what the last company did.

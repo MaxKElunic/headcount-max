@@ -53,6 +53,13 @@ region, redundant network paths in the same physical duct, a manual workaround t
 system you have just lost. Map dependencies to the point where they stop being yours, and check
 whether the redundancy is real or just contractual.
 
+## Sources
+
+`references/sources.md` in this skill lists the outside authorities that settle the questions
+here — what each one is authoritative for, and what you may do with it. Check them before
+answering on anything they cover, and cite what you used. Most are free to read and not free
+to reproduce; the use note on each is binding.
+
 ## Tooling
 
 Continuity and crisis management platforms: Fusion Framework, Castellan, Riskonnect, and similar.

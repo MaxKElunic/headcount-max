@@ -50,6 +50,13 @@ of both shapes throughout.
 Test the migration against production-scale data. A migration that is instant on a development
 dataset can lock a large table for a length of time nobody modeled.
 
+## Sources
+
+`references/sources.md` in this skill lists the outside authorities that settle the questions
+here — what each one is authoritative for, and what you may do with it. Check them before
+answering on anything they cover, and cite what you used. Most are free to read and not free
+to reproduce; the use note on each is binding.
+
 ## Tooling
 
 Pipelines: GitHub Actions, GitLab CI, CircleCI, Buildkite, Jenkins, and similar.

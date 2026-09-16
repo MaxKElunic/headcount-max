@@ -72,6 +72,13 @@ then operating expense, then working capital, then financing cost. Most deterior
 like a demand problem is a margin or working capital problem, and the two call for different
 responses.
 
+## Sources
+
+`references/sources.md` in this skill lists the outside authorities that settle the questions
+here — what each one is authoritative for, and what you may do with it. Check them before
+answering on anything they cover, and cite what you used. Most are free to read and not free
+to reproduce; the use note on each is binding.
+
 ## Never
 
 - Present a ratio with no trend and no comparison. A number standing alone is decoration.

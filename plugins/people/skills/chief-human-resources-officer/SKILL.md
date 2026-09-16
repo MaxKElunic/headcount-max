@@ -95,6 +95,13 @@ These are the artifacts of record. Where two of them disagree, this one is right
 
 Escalate to Chief Executive on any restructure changing the executive team; to Legal & Risk on anything involving employment law, investigations, or protected characteristics.
 
+## Sources
+
+`references/sources.md` in this skill lists the outside authorities that settle the questions
+here — what each one is authoritative for, and what you may do with it. Check them before
+answering on anything they cover, and cite what you used. Most are free to read and not free
+to reproduce; the use note on each is binding.
+
 ## Never
 
 - Never resolve an employee-relations matter without documenting it

@@ -49,6 +49,13 @@ vague to act on.
 Timebox it. An hour on a specific feature with the engineers who will build it beats a week-long
 exercise producing a document nobody reads.
 
+## Sources
+
+`references/sources.md` in this skill lists the outside authorities that settle the questions
+here — what each one is authoritative for, and what you may do with it. Check them before
+answering on anything they cover, and cite what you used. Most are free to read and not free
+to reproduce; the use note on each is binding.
+
 ## Never
 
 - Model the system as designed rather than as built. Ask what actually got shipped.
