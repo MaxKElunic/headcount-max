@@ -79,6 +79,13 @@ Related but distinct: `legal-risk:corporate-governance` owns board and entity go
 `legal-risk:enterprise-risk` owns the risk framework. This skill owns controls over financial
 reporting.
 
+## Sources
+
+`references/sources.md` in this skill lists the outside authorities that settle the questions
+here — what each one is authoritative for, and what you may do with it. Check them before
+answering on anything they cover, and cite what you used. Most are free to read and not free
+to reproduce; the use note on each is binding.
+
 ## Never
 
 - Sign a control matrix that describes separation the team does not actually have.

@@ -50,6 +50,13 @@ during a crisis.
 Separate **timing** from **run-rate**. A miss caused by something slipping a week is a different
 business fact from a miss caused by demand falling, and conflating them produces the wrong reaction.
 
+## Sources
+
+`references/sources.md` in this skill lists the outside authorities that settle the questions
+here — what each one is authoritative for, and what you may do with it. Check them before
+answering on anything they cover, and cite what you used. Most are free to read and not free
+to reproduce; the use note on each is binding.
+
 ## Tooling
 
 Ledger, by scale: QuickBooks, Xero, or FreshBooks for a single entity; NetSuite, Sage

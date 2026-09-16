@@ -1,0 +1,127 @@
+# Security, controls frameworks and vulnerability data.
+
+[[source]]
+id = "nist-sp-800-53"
+title = "NIST SP 800-53 Rev. 5 — Security and Privacy Controls for Information Systems"
+publisher = "NIST"
+url = "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
+license = "public-domain-usgov"
+jurisdiction = "US"
+authoritative_for = "The control catalog US federal systems are assessed against, and the control vocabulary FedRAMP and many private frameworks inherit."
+data = "https://github.com/usnistgov/oscal-content"
+skills = ["security:security-architecture-review", "security:access-and-identity", "security:chief-information-security-officer"]
+checked = "2026-09-16"
+
+[[source]]
+id = "nist-csf"
+title = "NIST Cybersecurity Framework 2.0"
+publisher = "NIST"
+url = "https://www.nist.gov/cyberframework"
+license = "public-domain-usgov"
+jurisdiction = "US"
+authoritative_for = "The outcome-based vocabulary — govern, identify, protect, detect, respond, recover — that boards and customers most often ask a security program to map to."
+skills = ["security:chief-information-security-officer", "security:security-architecture-review"]
+checked = "2026-09-16"
+
+[[source]]
+id = "fedramp-automation"
+title = "FedRAMP baselines and automation content"
+publisher = "GSA"
+url = "https://www.fedramp.gov/rev5/documents-templates/"
+license = "public-domain-usgov"
+jurisdiction = "US"
+authoritative_for = "Which SP 800-53 controls apply at low, moderate and high impact for a cloud service selling to the US federal government, and the evidence each requires."
+data = "https://github.com/GSA/fedramp-automation"
+skills = ["security:chief-information-security-officer", "security:security-architecture-review", "legal-risk:regulatory-compliance"]
+checked = "2026-09-16"
+
+[[source]]
+id = "cisa-kev"
+title = "CISA Known Exploited Vulnerabilities Catalog"
+publisher = "CISA"
+url = "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+license = "public-domain-usgov"
+jurisdiction = "US"
+authoritative_for = "Which vulnerabilities are being exploited in the wild right now — the only list that reliably separates patch-this-week from patch-this-quarter."
+data = "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+skills = ["security:vulnerability-management", "security:incident-response"]
+checked = "2026-09-16"
+
+[[source]]
+id = "nvd"
+title = "National Vulnerability Database"
+publisher = "NIST"
+url = "https://nvd.nist.gov/"
+license = "public-domain-usgov"
+jurisdiction = "US"
+authoritative_for = "CVE records with severity scoring and affected-version data, and the API a vulnerability program queries rather than reads."
+data = "https://nvd.nist.gov/developers/vulnerabilities"
+skills = ["security:vulnerability-management"]
+checked = "2026-09-16"
+
+[[source]]
+id = "mitre-attack"
+title = "MITRE ATT&CK"
+publisher = "The MITRE Corporation"
+url = "https://attack.mitre.org/"
+license = "attribution-required"
+jurisdiction = "global"
+authoritative_for = "The shared vocabulary for adversary tactics and techniques — what to name a behavior so a detection, a threat model and an incident report refer to the same thing."
+data = "https://github.com/mitre-attack/attack-stix-data"
+skills = ["security:threat-modeling", "security:incident-response", "security:security-architecture-review"]
+checked = "2026-09-16"
+
+[[source]]
+id = "owasp-top-10"
+title = "OWASP Top 10"
+publisher = "OWASP Foundation"
+url = "https://owasp.org/www-project-top-ten/"
+license = "cc-by-sa"
+jurisdiction = "global"
+authoritative_for = "The application-security risk categories a customer questionnaire or a pen-test report will be organized around."
+skills = ["security:threat-modeling", "security:security-architecture-review"]
+checked = "2026-09-16"
+
+[[source]]
+id = "owasp-asvs"
+title = "OWASP Application Security Verification Standard"
+publisher = "OWASP Foundation"
+url = "https://owasp.org/ASVS/"
+license = "cc-by-sa"
+jurisdiction = "global"
+authoritative_for = "Testable application security requirements at three assurance levels — the thing to write into a spec when 'make it secure' needs to become acceptance criteria."
+skills = ["security:security-architecture-review"]
+checked = "2026-09-16"
+
+[[source]]
+id = "cis-controls"
+title = "CIS Critical Security Controls"
+publisher = "Center for Internet Security"
+url = "https://www.cisecurity.org/controls"
+license = "registration-required"
+jurisdiction = "global"
+authoritative_for = "A prioritized implementation order for a security program that has to start somewhere, with implementation groups sized to organizational maturity."
+skills = ["security:chief-information-security-officer"]
+checked = "2026-09-16"
+
+[[source]]
+id = "sans-policy-templates"
+title = "SANS Information Security Policy Templates"
+publisher = "SANS Institute"
+url = "https://www.sans.org/information-security-policy/"
+license = "free-to-read"
+jurisdiction = "global"
+authoritative_for = "Starting-point policy language for the policies an auditor expects to exist. Read and adapt; the templates are copyrighted and are not open-licensed."
+skills = ["security:chief-information-security-officer", "legal-risk:regulatory-compliance"]
+checked = "2026-09-16"
+
+[[source]]
+id = "iso-27001"
+title = "ISO/IEC 27001 — Information security management systems"
+publisher = "ISO"
+url = "https://www.iso.org/standard/27001"
+license = "paywalled"
+jurisdiction = "global"
+authoritative_for = "The certifiable ISMS standard enterprise buyers ask for by name. The text is sold, not published — cite the clause number, never the wording."
+skills = ["security:chief-information-security-officer", "legal-risk:regulatory-compliance"]
+checked = "2026-09-16"

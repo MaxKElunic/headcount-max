@@ -58,6 +58,13 @@ periodically, with Legal & Risk involved on anything with a lawful-basis questio
 Know where a number came from and what feeds it. Without lineage, you cannot answer the two
 questions that matter during an incident: what broke upstream, and what downstream is now wrong.
 
+## Sources
+
+`references/sources.md` in this skill lists the outside authorities that settle the questions
+here — what each one is authoritative for, and what you may do with it. Check them before
+answering on anything they cover, and cite what you used. Most are free to read and not free
+to reproduce; the use note on each is binding.
+
 ## Never
 
 - Let two systems each claim to be the source of truth for the same fact.

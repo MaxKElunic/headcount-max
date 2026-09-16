@@ -61,6 +61,8 @@ Every check CI runs, in one script — the workflow calls this same file, so the
 | Skill references | Every `department:skill` mentioned in the docs or in a skill body resolves |
 | US English spelling | No British spellings, by exact word form |
 | `## Never` blocks | Bullets inside one block agree on terminal punctuation |
+| Source catalog | Structure, license vocabulary, and every skill it names resolves |
+| Skill source files | Each skill's `references/sources.md` matches the catalog |
 | Verticals | Every vertical emits, and the emitted repository passes its own checks |
 | Manifests | The marketplace file and every `plugin.json` parse |
 
@@ -113,6 +115,25 @@ department cannot end up missing from the README and the org chart while the che
 
 Give it a chief before any specialists — the department's remit should exist before things are added
 to it.
+
+## Adding a source
+
+`sources/*.toml` maps outside authorities — regulators, standards bodies, primary law, public
+datasets — to the skills whose answers they settle. `scripts/build-sources.py` emits each skill's
+list into its own `references/sources.md`, which is what an agent reads while it is answering.
+
+**References, never copies.** The catalog holds a URL and a judgment about it, never source
+material. That keeps D3 and D6 true and keeps the catalog live — a pointer to a regulator's site is
+right the moment the rule changes, and a copy is wrong the moment it does.
+
+**The `license` field is the load-bearing one.** Most of what a professional must cite is not open:
+ISO standards are sold, SANS papers are copyrighted, the FASB Codification needs an account. An
+entry classed wrongly as open invites an agent to reproduce text it was only allowed to read. When
+torn between two classes, take the more restrictive one. `sources/README.md` has the vocabulary.
+
+Link reachability is checked weekly by its own workflow rather than on every push, because a
+publisher being briefly down is not a reason to fail an unrelated pull request. Run
+`python3 scripts/check-sources.py --online` before you claim a `checked` date.
 
 ## Adding to a vertical
 

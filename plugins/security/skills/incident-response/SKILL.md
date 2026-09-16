@@ -66,6 +66,13 @@ The plan matters less than having run it. Exercise once a year at minimum: a tab
 realistic scenario finds the gaps — who has authority out of hours, where the credentials are, who
 calls counsel — at a time when finding them is free.
 
+## Sources
+
+`references/sources.md` in this skill lists the outside authorities that settle the questions
+here — what each one is authoritative for, and what you may do with it. Check them before
+answering on anything they cover, and cite what you used. Most are free to read and not free
+to reproduce; the use note on each is binding.
+
 ## Never
 
 - Rebuild or wipe a compromised host before evidence is captured.

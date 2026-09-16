@@ -1,0 +1,174 @@
+# Law, regulation and employment obligation. Primary sources, jurisdiction-tagged.
+#
+# US statutes and regulations are not copyrightable — the government edicts doctrine — so the
+# primary sources here are free to quote. The annotated and aggregated versions of the same law
+# often are not, which is why this file points at the publisher rather than the convenient site.
+
+[[source]]
+id = "ecfr"
+title = "Electronic Code of Federal Regulations"
+publisher = "US Government Publishing Office / NARA"
+url = "https://www.ecfr.gov/"
+license = "public-domain-usgov"
+jurisdiction = "US"
+authoritative_for = "The current text of US federal regulation, updated daily. This is the citation of record — an agency web page summarizing its own rule is not."
+data = "https://www.ecfr.gov/developers/documentation/api/v1"
+skills = ["legal-risk:regulatory-compliance", "legal-risk:chief-legal-and-risk-officer"]
+checked = "2026-09-16"
+
+[[source]]
+id = "us-code"
+title = "United States Code"
+publisher = "Office of the Law Revision Counsel, US House of Representatives"
+url = "https://uscode.house.gov/"
+license = "public-domain-usgov"
+jurisdiction = "US"
+authoritative_for = "The consolidated text of US federal statute, where a regulation's authority is traced back to the law that permits it."
+skills = ["legal-risk:regulatory-compliance", "legal-risk:chief-legal-and-risk-officer"]
+checked = "2026-09-16"
+
+[[source]]
+id = "govinfo"
+title = "govinfo"
+publisher = "US Government Publishing Office"
+url = "https://www.govinfo.gov/"
+license = "public-domain-usgov"
+jurisdiction = "US"
+authoritative_for = "Authenticated federal documents — the Federal Register, bills, the Congressional Record — when the question is what was actually published and when."
+data = "https://api.govinfo.gov/docs/"
+skills = ["legal-risk:regulatory-compliance"]
+checked = "2026-09-16"
+
+[[source]]
+id = "dol-whd"
+title = "Wage and Hour Division"
+publisher = "US Department of Labor"
+url = "https://www.dol.gov/agencies/whd"
+license = "public-domain-usgov"
+jurisdiction = "US"
+authoritative_for = "Federal wage and hour obligation — overtime, the regular rate, exemption tests, child labor, family and medical leave — including the fact sheets and opinion letters the agency itself enforces against."
+skills = ["people:employment-compliance", "people:payroll-operations", "people:chief-human-resources-officer"]
+checked = "2026-09-16"
+
+[[source]]
+id = "dol-state-labor-offices"
+title = "State Labor Offices directory"
+publisher = "US Department of Labor"
+url = "https://www.dol.gov/agencies/whd/state/contacts"
+license = "public-domain-usgov"
+jurisdiction = "US"
+authoritative_for = "Which state agency to ask, and its site, when an employment question turns on state rather than federal law. There is no single open source for fifty states — this is the index that gets you to the right one."
+skills = ["people:employment-compliance", "people:payroll-operations"]
+checked = "2026-09-16"
+
+[[source]]
+id = "dol-state-minimum-wage"
+title = "Consolidated State Minimum Wage and Overtime tables"
+publisher = "US Department of Labor"
+url = "https://www.dol.gov/agencies/whd/state/minimum-wage/history"
+license = "public-domain-usgov"
+jurisdiction = "US"
+authoritative_for = "State-by-state minimum wage and state overtime rules in one maintained table, where the binding figure is whichever of state or federal is higher."
+skills = ["people:employment-compliance", "people:payroll-operations", "people:compensation-and-leveling"]
+checked = "2026-09-16"
+
+[[source]]
+id = "eeoc-guidance"
+title = "EEOC Laws, Regulations, Guidance and MOUs"
+publisher = "US Equal Employment Opportunity Commission"
+url = "https://www.eeoc.gov/laws-guidance"
+license = "public-domain-usgov"
+jurisdiction = "US"
+authoritative_for = "Federal anti-discrimination obligation as the agency that enforces it reads it — including guidance on selection procedures, accommodation, and automated decision tools in hiring."
+skills = ["people:employment-compliance", "people:hiring-and-interviewing", "people:employee-relations"]
+checked = "2026-09-16"
+
+[[source]]
+id = "nlrb-decisions"
+title = "National Labor Relations Board — decisions and guidance"
+publisher = "NLRB"
+url = "https://www.nlrb.gov/cases-decisions"
+license = "public-domain-usgov"
+jurisdiction = "US"
+authoritative_for = "What counts as protected concerted activity and as an unfair labor practice, for represented and unrepresented workforces alike."
+skills = ["people:employee-relations", "people:employment-compliance"]
+checked = "2026-09-16"
+
+[[source]]
+id = "osha-standards"
+title = "OSHA law and regulations"
+publisher = "US Occupational Safety and Health Administration"
+url = "https://www.osha.gov/laws-regs"
+license = "public-domain-usgov"
+jurisdiction = "US"
+authoritative_for = "Workplace safety obligation, recordkeeping requirements and the reporting windows for a fatality or serious injury."
+skills = ["legal-risk:regulatory-compliance", "operations:business-continuity-and-resilience"]
+checked = "2026-09-16"
+
+[[source]]
+id = "eur-lex-gdpr"
+title = "Regulation (EU) 2016/679 — GDPR"
+publisher = "Publications Office of the European Union"
+url = "https://eur-lex.europa.eu/eli/reg/2016/679/oj"
+license = "attribution-required"
+jurisdiction = "EU"
+authoritative_for = "The operative text of the GDPR. EU legal texts are reusable with attribution under the Commission's reuse decision, so this is quotable where a national summary is not."
+skills = ["legal-risk:privacy-and-data-protection", "legal-risk:regulatory-compliance", "data-analytics:data-governance"]
+checked = "2026-09-16"
+
+[[source]]
+id = "edpb-guidelines"
+title = "European Data Protection Board guidelines and recommendations"
+publisher = "EDPB"
+url = "https://www.edpb.europa.eu/our-work-tools/general-guidance/guidelines-recommendations-best-practices_en"
+license = "attribution-required"
+jurisdiction = "EU"
+authoritative_for = "How supervisory authorities actually read the GDPR — lawful basis, transfers, legitimate interest balancing — which is where a plain reading of the regulation stops being enough."
+skills = ["legal-risk:privacy-and-data-protection", "data-analytics:data-governance"]
+checked = "2026-09-16"
+
+[[source]]
+id = "ca-oag-ccpa"
+title = "California Consumer Privacy Act — Attorney General"
+publisher = "California Office of the Attorney General"
+url = "https://oag.ca.gov/privacy/ccpa"
+license = "public-domain"
+jurisdiction = "US-CA"
+authoritative_for = "The largest US state privacy regime, and the template several other states followed. Start here before generalizing about 'US state privacy law', which is not one thing."
+skills = ["legal-risk:privacy-and-data-protection", "data-analytics:data-governance"]
+checked = "2026-09-16"
+
+[[source]]
+id = "cornell-lii"
+title = "Legal Information Institute"
+publisher = "Cornell Law School"
+url = "https://www.law.cornell.edu/"
+license = "free-to-read"
+jurisdiction = "US"
+authoritative_for = "Finding the right provision fast, with plain-language context around it. The underlying law is public domain; LII's annotations and commentary are not — follow through to the primary source before citing."
+skills = ["legal-risk:regulatory-compliance", "legal-risk:contract-review", "legal-risk:chief-legal-and-risk-officer"]
+checked = "2026-09-16"
+
+[[source]]
+id = "uspto"
+title = "USPTO search and guidance"
+publisher = "US Patent and Trademark Office"
+url = "https://www.uspto.gov/"
+license = "public-domain-usgov"
+jurisdiction = "US"
+authoritative_for = "Whether a mark or an invention is already claimed, and the examination standards a filing will be judged against."
+data = "https://developer.uspto.gov/"
+skills = ["legal-risk:intellectual-property"]
+checked = "2026-09-16"
+
+[[source]]
+id = "spdx-license-list"
+title = "SPDX License List"
+publisher = "The Linux Foundation"
+url = "https://spdx.org/licenses/"
+license = "cc-by"
+jurisdiction = "global"
+authoritative_for = "The canonical identifier and full text of every common open-source license — the reference for an inbound license review, and for what a share-alike obligation actually says."
+data = "https://github.com/spdx/license-list-data"
+skills = ["legal-risk:intellectual-property", "technology:release-and-deployment"]
+checked = "2026-09-16"

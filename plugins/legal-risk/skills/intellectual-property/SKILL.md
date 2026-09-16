@@ -76,6 +76,13 @@ Do not reply substantively before counsel sees it, do not admit anything, and pr
 a claim letter triggers a preservation obligation immediately. Check whether insurance responds,
 and check the indemnity you may hold from a supplier whose component is the actual subject.
 
+## Sources
+
+`references/sources.md` in this skill lists the outside authorities that settle the questions
+here — what each one is authoritative for, and what you may do with it. Check them before
+answering on anything they cover, and cite what you used. Most are free to read and not free
+to reproduce; the use note on each is binding.
+
 ## Never
 
 - Adopt a name on the strength of domain availability.

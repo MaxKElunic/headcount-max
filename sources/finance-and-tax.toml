@@ -1,0 +1,128 @@
+# Tax, accounting standards, filings and reference rates.
+#
+# The pattern to notice: US tax authority is public domain and directly quotable, while the
+# accounting standards it interacts with are copyrighted and sold. A skill may cite ASC 606 by
+# number and must not reproduce its text.
+
+[[source]]
+id = "irs-irb"
+title = "Internal Revenue Bulletin"
+publisher = "US Internal Revenue Service"
+url = "https://www.irs.gov/irb"
+license = "public-domain-usgov"
+jurisdiction = "US"
+authoritative_for = "The IRS's own authoritative announcements — revenue rulings, revenue procedures, notices. Where a position has to be supported rather than described, this is what supports it."
+skills = ["finance:tax", "finance:chief-financial-officer"]
+checked = "2026-09-16"
+
+[[source]]
+id = "irs-forms-pubs"
+title = "IRS forms, instructions and publications"
+publisher = "US Internal Revenue Service"
+url = "https://www.irs.gov/forms-instructions"
+license = "public-domain-usgov"
+jurisdiction = "US"
+authoritative_for = "Current-year thresholds, rates, limits and filing mechanics. Instructions carry the numbers that change annually and that a model built last year has wrong."
+skills = ["finance:tax", "people:payroll-operations"]
+checked = "2026-09-16"
+
+[[source]]
+id = "irs-applicable-federal-rates"
+title = "Applicable Federal Rates"
+publisher = "US Internal Revenue Service"
+url = "https://www.irs.gov/applicable-federal-rates"
+license = "public-domain-usgov"
+jurisdiction = "US"
+authoritative_for = "The minimum interest rate an intercompany or related-party loan must carry to avoid imputed interest, published monthly."
+skills = ["finance:tax", "finance:treasury-and-liquidity"]
+checked = "2026-09-16"
+
+[[source]]
+id = "fta-state-tax-agencies"
+title = "State tax agency directory"
+publisher = "Federation of Tax Administrators"
+url = "https://taxadmin.org/state-tax-agencies/"
+license = "free-to-read"
+jurisdiction = "US"
+authoritative_for = "Which state revenue department to ask, and its site. State tax guidance has no single open source and no consistent format — this is the index that routes the question to the body that can answer it."
+skills = ["finance:tax"]
+checked = "2026-09-16"
+
+[[source]]
+id = "sec-edgar"
+title = "EDGAR full-text search and submissions API"
+publisher = "US Securities and Exchange Commission"
+url = "https://www.sec.gov/edgar/search-and-access"
+license = "public-domain-usgov"
+jurisdiction = "US"
+authoritative_for = "What public companies actually reported, in their own filings — the primary source for a competitor's economics, a comparable's margin structure, or how a peer disclosed an accounting policy."
+data = "https://www.sec.gov/search-filings/edgar-application-programming-interfaces"
+skills = ["finance:financial-statement-analysis", "finance:financial-reporting-and-close", "corporate-strategy:mergers-and-acquisitions"]
+checked = "2026-09-16"
+
+[[source]]
+id = "fred"
+title = "FRED — Federal Reserve Economic Data"
+publisher = "Federal Reserve Bank of St. Louis"
+url = "https://fred.stlouisfed.org/"
+license = "open-data"
+jurisdiction = "US"
+authoritative_for = "Reference rates, inflation series and macro indicators with a documented API — the honest input for a discount rate or an escalation assumption, in place of a remembered number."
+data = "https://fred.stlouisfed.org/docs/api/fred/"
+skills = ["finance:financial-modeling", "finance:treasury-and-liquidity", "finance:budgeting-and-forecasting"]
+checked = "2026-09-16"
+
+[[source]]
+id = "treasury-yield-curve"
+title = "Daily Treasury Par Yield Curve Rates"
+publisher = "US Department of the Treasury"
+url = "https://home.treasury.gov/interest-rates-data-csv-archive"
+license = "public-domain-usgov"
+jurisdiction = "US"
+authoritative_for = "The risk-free rate by maturity, as published — the input a discount rate is built from, rather than asserted."
+skills = ["finance:financial-modeling", "finance:capital-allocation", "finance:treasury-and-liquidity"]
+checked = "2026-09-16"
+
+[[source]]
+id = "fasb-codification"
+title = "FASB Accounting Standards Codification"
+publisher = "Financial Accounting Standards Board"
+url = "https://asc.fasb.org/"
+license = "registration-required"
+jurisdiction = "US"
+authoritative_for = "US GAAP as it actually reads — revenue recognition, leases, impairment. The Basic View is free with an account and the text is copyrighted: cite the ASC number, do not reproduce the wording."
+skills = ["finance:revenue-recognition", "finance:financial-reporting-and-close", "finance:chief-financial-officer"]
+checked = "2026-09-16"
+
+[[source]]
+id = "pcaob-standards"
+title = "PCAOB auditing standards"
+publisher = "Public Company Accounting Oversight Board"
+url = "https://pcaobus.org/oversight/standards/auditing-standards"
+license = "free-to-read"
+jurisdiction = "US"
+authoritative_for = "What an auditor of a public company is required to do — useful in reverse, as the definition of the evidence an internal controls program has to be able to produce."
+skills = ["finance:internal-controls-and-audit"]
+checked = "2026-09-16"
+
+[[source]]
+id = "coso-framework"
+title = "COSO Internal Control — Integrated Framework"
+publisher = "Committee of Sponsoring Organizations of the Treadway Commission"
+url = "https://www.coso.org/guidance-on-ic"
+license = "paywalled"
+jurisdiction = "global"
+authoritative_for = "The internal-control framework a SOX program is organized around and an auditor expects to be named. The framework document is sold — cite the component, not the text."
+skills = ["finance:internal-controls-and-audit", "legal-risk:enterprise-risk"]
+checked = "2026-09-16"
+
+[[source]]
+id = "ifrs-standards"
+title = "IFRS Accounting Standards"
+publisher = "IFRS Foundation"
+url = "https://www.ifrs.org/issued-standards/list-of-standards/"
+license = "registration-required"
+jurisdiction = "global"
+authoritative_for = "The standards outside US GAAP, and where the two diverge on a given transaction. Free access requires an account; the text is copyrighted."
+skills = ["finance:financial-reporting-and-close", "finance:revenue-recognition"]
+checked = "2026-09-16"

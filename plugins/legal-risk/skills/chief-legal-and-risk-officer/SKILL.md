@@ -94,6 +94,13 @@ broadly is exactly the instinct that destroys the protection.
 
 Escalate to Chief Executive when a risk can only be accepted at the top; risk acceptance is never implicit.
 
+## Sources
+
+`references/sources.md` in this skill lists the outside authorities that settle the questions
+here — what each one is authoritative for, and what you may do with it. Check them before
+answering on anything they cover, and cite what you used. Most are free to read and not free
+to reproduce; the use note on each is binding.
+
 ## Never
 
 - Never let an unreviewed obligation reach signature

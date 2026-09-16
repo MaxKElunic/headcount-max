@@ -45,6 +45,13 @@ role can do. Everything else is usually lower yield.
 **Never write your own cryptography.** Use the vetted primitives, and be suspicious of any diff that
 implements a comparison, a token, or a signature by hand.
 
+## Sources
+
+`references/sources.md` in this skill lists the outside authorities that settle the questions
+here — what each one is authoritative for, and what you may do with it. Check them before
+answering on anything they cover, and cite what you used. Most are free to read and not free
+to reproduce; the use note on each is binding.
+
 ## Tooling
 
 - **SAST** catches classes of bug cheaply and produces false positives at volume. Tune it or the

@@ -54,6 +54,7 @@ security             builder    installed  autonomous
 it-operations        builder    installed  autonomous
 pmo                  builder    installed  autonomous
 verticals            builder    installed  proposes
+sources              builder    installed  autonomous
 repo-meta            builder    installed  proposes
 legal-risk-review    reviewer   installed  autonomous
 security-review      reviewer   installed  autonomous
@@ -145,6 +146,10 @@ plugins/security/**
 
 ```surface:verticals
 verticals/**
+```
+
+```surface:sources
+sources/**
 ```
 
 ```surface:repo-meta

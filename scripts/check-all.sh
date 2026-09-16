@@ -35,6 +35,10 @@ run "US English spelling" \
   python3 scripts/check-us-english.py
 run "Never blocks are internally consistent" \
   python3 scripts/check-never-blocks.py
+run "Source catalog is valid" \
+  python3 scripts/check-sources.py
+run "Skill source files are current" \
+  python3 scripts/build-sources.py --check
 run "Verticals emit and pass their own checks" \
   python3 scripts/build-vertical.py --all --verify
 run "Manifests parse" \

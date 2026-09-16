@@ -54,6 +54,13 @@ The deferred balance is work owed, not money banked. Track it by cohort and obli
 answer what it is composed of and when it releases. A balance nobody can decompose is one that
 surprises you.
 
+## Sources
+
+`references/sources.md` in this skill lists the outside authorities that settle the questions
+here — what each one is authoritative for, and what you may do with it. Check them before
+answering on anything they cover, and cite what you used. Most are free to read and not free
+to reproduce; the use note on each is binding.
+
 ## Tooling
 
 Subledgers that carry recognition schedules: NetSuite Advanced Revenue Management, Zuora

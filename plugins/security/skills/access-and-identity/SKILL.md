@@ -65,6 +65,13 @@ Look for: permissions granted to individuals rather than roles, roles nobody can
 administrative access, accounts whose owner has left, service credentials with no owner, and systems
 outside SSO. Each is a specific fix, and the list is nearly always the same list.
 
+## Sources
+
+`references/sources.md` in this skill lists the outside authorities that settle the questions
+here — what each one is authoritative for, and what you may do with it. Check them before
+answering on anything they cover, and cite what you used. Most are free to read and not free
+to reproduce; the use note on each is binding.
+
 ## Tooling
 
 Identity providers: Okta, Microsoft Entra ID, Google Workspace, JumpCloud, and similar.

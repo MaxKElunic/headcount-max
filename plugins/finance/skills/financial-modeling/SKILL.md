@@ -69,6 +69,13 @@ Lead with the answer, then the two assumptions it rests on most heavily, then wh
 Never present a model without stating what it is most sensitive to — the recipient will assume
 robustness you did not claim.
 
+## Sources
+
+`references/sources.md` in this skill lists the outside authorities that settle the questions
+here — what each one is authoritative for, and what you may do with it. Check them before
+answering on anything they cover, and cite what you used. Most are free to read and not free
+to reproduce; the use note on each is binding.
+
 ## Never
 
 - Report a number to more precision than the assumptions support. Five significant figures from a

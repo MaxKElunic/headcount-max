@@ -1,0 +1,23 @@
+name: source links
+
+# The catalog points at outside publishers, so it rots without anything in this repository
+# changing. That makes it the one check worth running on a clock rather than on a diff.
+#
+# Deliberately not part of `checks.yml`: a publisher being briefly down, or rate-limiting a
+# runner, is not a reason to fail somebody's pull request. A dead link is real and worth a
+# notification; it is not worth blocking a merge that has nothing to do with it.
+on:
+  schedule:
+    - cron: "17 7 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Fetch every cataloged source
+        run: python3 scripts/check-sources.py --online

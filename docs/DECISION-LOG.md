@@ -48,6 +48,7 @@ recorded rather than being deleted.
 | D34 | Two skills claim social graphics | ✅ Resolved |
 | D35 | Whether description shape is a checkable convention | ✅ Resolved |
 | D36 | Where emitted vertical repositories live | ✅ Resolved |
+| D37 | Authoritative sources as a catalog of references | ✅ Resolved |
 
 ---
 
@@ -1249,3 +1250,61 @@ is emitted into a distributable repository carrying industry-specific advice, an
 is one-way, nothing downstream can correct it locally. The generator itself stays with `repo-meta`
 alongside the other scripts — writing industry advice and maintaining the tool that ships it are
 different jobs.
+
+---
+
+## D37. Authoritative sources as a catalog of references — ✅ Resolved
+
+A skill states what a competent practitioner knows. It does not state what the regulator published
+last month, and it cannot: the catalog is written once and the obligation moves. The ask was for
+each skill to carry the outside authorities an agent should check in real time — tax guidance,
+employment law by jurisdiction, security control catalogs, standards bodies, public datasets.
+
+The framing offered was "open source or MIT/Apache licensed sources." Investigating that turned out
+to be the decision, because **most of what a professional must cite is not open**, and the examples
+named make the point: ISO standards are sold, SANS papers are copyrighted, the FASB Codification is
+free only behind an account. What *is* freely usable is narrower and more valuable than it looks —
+US federal works are public domain by statute, statutes and regulations are uncopyrightable as
+government edicts, and EU legal texts are reusable with attribution.
+
+So the catalog cannot be a list of things we may copy. It has to be a list of things an agent may
+*read*, each carrying what it may then do with what it read.
+
+- **(a) A catalog of references, with a closed license vocabulary, emitted per skill.** ← **chosen**
+- (b) Vendor the material that permits it — US public-domain control catalogs, CISA KEV — so a
+  skill works offline. Reverses D3 and D6, needs a carve-out in the provenance check, and
+  reintroduces the staleness the catalog exists to remove: a snapshot of a live feed is wrong the
+  day after it is taken.
+- (c) Put the URLs inline in each skill body. No new machinery, and no way to check that a link
+  still resolves, no way to record what may be done with it, and one source serving three
+  departments becomes three copies to update.
+
+**Resolution: (a).** `sources/*.toml` maps a source to the skills whose answers it settles.
+`scripts/build-sources.py` emits each skill's list into its own `references/sources.md`, which is
+where Claude Code and ChatGPT both load a skill's supporting files from on demand — so the agent
+gets its own sources and not the other 171 skills'.
+
+**The license class is the load-bearing field**, and it is a closed vocabulary the checker enforces.
+Three of its ten values — `free-to-read`, `registration-required`, `paywalled` — exist specifically
+to mark the sources most often assumed open and not. An entry classed wrongly as open invites an
+agent to reproduce text it was only ever allowed to cite. The emitted file states the consequence in
+the imperative next to each source rather than leaving it to a table elsewhere.
+
+**Three things were built to keep it honest rather than merely present.**
+
+A skill with sources must carry a `## Sources` section, and a skill carrying one must have sources.
+Without that pairing the feature rots in both directions at once — a file nobody is told about, or a
+pointer to a file no longer emitted. The check enforces it both ways.
+
+Reachability is checked weekly on its own schedule, not on every push. A publisher being briefly
+down is not a reason to fail an unrelated pull request, and a check that fails for reasons outside
+the diff is a check people learn to ignore. All 37 initial URLs were verified reachable before the
+`checked` dates were claimed, and three were wrong at first writing.
+
+The provenance check gained a narrow waiver, because a file whose job is to classify licenses must
+be able to name license families. It waives the *names* only; actual license text is still caught by
+its body, which the waiver was tested against by pasting some in and watching it fail.
+
+**Coverage is `security`, `legal-risk` and `finance` first** — the three departments where citing
+the authority changes the answer rather than decorating it. Extending it is adding entries, not
+changing the mechanism.

@@ -57,6 +57,13 @@ have been treated. Inconsistency is the single most common source of successful 
 The people who remain draw conclusions from how leavers are treated, and those conclusions are
 durable.
 
+## Sources
+
+`references/sources.md` in this skill lists the outside authorities that settle the questions
+here — what each one is authoritative for, and what you may do with it. Check them before
+answering on anything they cover, and cite what you used. Most are free to read and not free
+to reproduce; the use note on each is binding.
+
 ## Never
 
 - Promise confidentiality you cannot keep.
