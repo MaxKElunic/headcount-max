@@ -2,3 +2,8 @@
 # untracked __pycache__ is enough to make a clean tree look dirty.
 __pycache__/
 *.pyc
+
+# Emitted vertical repositories. Generation is one-way (D8) and the output is never hand-edited, so
+# committing it would put a hand-editable copy in front of every contributor. `build-vertical.py
+# --verify` proves the emit is sound without keeping a copy (D36).
+dist/

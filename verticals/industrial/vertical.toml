@@ -1,0 +1,38 @@
+# The industrial vertical: manufacturing, production, print and fulfillment operations.
+#
+# Chosen as the first vertical because it is the one that can be checked against reality — D10
+# records the operating businesses behind this repository as print, fulfillment and production
+# work, and D7 resolved that verticals are built for own use before they are productized. A
+# vertical nobody in the room can judge is a vertical whose quality nobody can judge.
+#
+# This file says what the vertical *is*. What it *adds* is discovered on disk: skills under
+# skills/<department>/<skill>/SKILL.md, and extensions to core skills under
+# context/<department>/<skill>.md. Nothing is listed twice.
+
+[vertical]
+slug = "industrial"
+name = "headcount-industrial"
+title = "Industrial"
+tagline = "An agent organization for companies that make and ship physical things — the full cross-industry core, plus the plant floor."
+description = "An agent organization for manufacturing, production, print and fulfillment operations. Each department installs independently so only the relevant function loads."
+keywords = ["manufacturing", "production", "industrial", "plant-operations"]
+rationale = """
+The core is deliberately cross-industry: it covers the company, not the factory. That is the right
+default, and it is also why a plant manager asking a core skill about capacity gets an answer about
+service queues.
+
+This vertical keeps every core skill and adds the part the core leaves out on purpose — production
+scheduling, maintenance and reliability, safety as a regulated obligation rather than a value, and
+the employment relationship as it exists on a shop floor. Where a core skill is right in shape but
+thin on the plant floor, the vertical extends it in place rather than forking it, so an improvement
+to the core still reaches this repository on the next emit.
+"""
+
+[repo]
+url = "https://github.com/cbrock84/headcount-industrial"
+upstream = "https://github.com/cbrock84/headcount"
+
+[emit]
+# Every core department ships. Nothing about demand generation or product stops applying to a
+# manufacturer, and D8's rule against removing a surface because it looks unused applies here too.
+exclude_departments = []

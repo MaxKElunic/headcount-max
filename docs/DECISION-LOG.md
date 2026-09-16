@@ -47,6 +47,7 @@ recorded rather than being deleted.
 | D33 | US English check rejects the plural of "analysis" | ✅ Resolved |
 | D34 | Two skills claim social graphics | ✅ Resolved |
 | D35 | Whether description shape is a checkable convention | ✅ Resolved |
+| D36 | Where emitted vertical repositories live | ✅ Resolved |
 
 ---
 
@@ -409,7 +410,7 @@ of decisions.
 | 7 | Deepen `operations`, then `finance`, then `people` | D10 | — | ✅ done |
 | 8 | Catalog the other organizations' public repos — no import | D11 | — | ✂️ dropped, D30 |
 | 9 | ~~Separate session for the private sweep~~ | D11 | — | ✂️ dropped, D30 |
-| 10 | Build the vertical generator: core, per-vertical config, one-way emit | D8 | — | |
+| 10 | Build the vertical generator: core, per-vertical config, one-way emit | D8 | — | ✅ done, D36 |
 | 11 | Revisit repo visibility | D16 | after 1 | ✅ done |
 
 Items 1–4 can proceed in parallel; all four land before item 5. Items 8 and 9 were dropped in D30.
@@ -1207,3 +1208,44 @@ it.** The figure "~24 agents over a 1,500-file monorepo" in `executive:agent-hie
 a claim about this roster, which currently runs 17 builders and 2 reviewers. It is not: both
 instances say the method was *extracted from* a working implementation of that size. The sentence
 describes the source the method came from, and changing the number would make it wrong.
+
+---
+
+## D36. Where emitted vertical repositories live — ✅ Resolved
+
+D8 resolved the vertical architecture to template-plus-generator with one-way emit, and roadmap item
+10 was to build it. Building it raised a question D8 did not answer: what happens to the output.
+
+Every other generated artifact in this repository — the README, the org chart, the social card — is
+committed, and a `--check` mode fails the build when the committed copy drifts from what the
+generator produces. Applying that pattern here would mean committing an entire second copy of the
+tree per vertical.
+
+- **(a) Emit to a gitignored `dist/`, and verify by emitting to a temporary directory and running
+  the emitted repository's own checks against it.** ← **chosen**
+- (b) Commit the emitted tree and `--check` it like the other generated documents. Consistent with
+  the existing pattern, and reviewable in a diff. It also roughly doubles the repository per
+  vertical, and — decisively — puts a hand-editable copy of the output in front of every
+  contributor, which is the one thing D8's rule forbids. A `--check` failure would read as "the
+  generated copy is stale" long after someone had already edited it.
+- (c) Emit straight to the downstream repository from CI. Removes the local copy entirely, at the
+  cost of making every push to this repository a publish. Publishing should be a deliberate act.
+
+**Resolution: (a).** The invariant worth holding is not "a stored copy matches the generator" but
+"the generator produces a repository that is sound." `--verify` states that directly: it emits into
+a temporary directory, initializes it the way a consumer's clone would be, runs the emitted
+repository's checks, and keeps nothing. CI runs it on every push, so the emit cannot rot unnoticed.
+
+**Two consequences worth recording.**
+
+The emitted repository does not carry the three document generators or their checks. Its README is
+written by `build-vertical.py`, so a "README is current" check downstream would be verifying the
+wrong generator; freshness is guaranteed upstream instead. It carries the other seven checks, which
+still mean what they say about a tree of skills.
+
+`verticals/**` is a new surface with its own owner, and it is the second row marked `proposes`. A
+change inside a department is wrong in one department of one repository. A change inside a vertical
+is emitted into a distributable repository carrying industry-specific advice, and because the emit
+is one-way, nothing downstream can correct it locally. The generator itself stays with `repo-meta`
+alongside the other scripts — writing industry advice and maintaining the tool that ships it are
+different jobs.

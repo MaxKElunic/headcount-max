@@ -61,6 +61,7 @@ Every check CI runs, in one script — the workflow calls this same file, so the
 | Skill references | Every `department:skill` mentioned in the docs or in a skill body resolves |
 | US English spelling | No British spellings, by exact word form |
 | `## Never` blocks | Bullets inside one block agree on terminal punctuation |
+| Verticals | Every vertical emits, and the emitted repository passes its own checks |
 | Manifests | The marketplace file and every `plugin.json` parse |
 
 **Stage your files first.** The surface guard reads `git ls-files`, so an unstaged file is invisible
@@ -112,6 +113,19 @@ department cannot end up missing from the README and the org chart while the che
 
 Give it a chief before any specialists — the department's remit should exist before things are added
 to it.
+
+## Adding to a vertical
+
+A vertical is the core made specific to one industry. `scripts/build-vertical.py` emits a standalone
+repository from the core plus a config under `verticals/<slug>/`.
+
+Generation is one-way and **generated output is never hand-edited** (D8). `dist/` is gitignored for
+that reason; what replaces a committed copy is `--verify`, which emits to a temporary directory and
+runs the emitted repository's own checks against it. CI does that on every push.
+
+A vertical adds skills and extends core skills. It never edits a core skill in place — a core skill
+that is wrong for every industry is wrong in the core, and fixing it there is what reaches every
+vertical on its next emit. `verticals/README.md` has the working details.
 
 ## Adding a file outside `plugins/`
 

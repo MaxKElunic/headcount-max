@@ -41,7 +41,9 @@ OWN_LICENSE = "LICENSE"  # ours, and the only one expected
 OWN_LICENSE_MENTION = {"CONTRIBUTING.md", "README.md", "docs/DECISION-LOG.md"}
 OWN_LICENSE_PATTERN = r"\bMIT License\b"
 
-SKIP_DIRS = (".git/",)
+# Generated output and build byproducts are not this repository's content. `dist/` in particular
+# is a copy of the tree already being checked, so scanning it doubles every finding.
+SKIP_DIRS = (".git/", "dist/", "__pycache__/")
 
 
 def is_probably_text(path, sniff=4096):
