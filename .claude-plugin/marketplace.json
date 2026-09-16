@@ -77,7 +77,7 @@
       "category": "product"
     },
     {
-      "name": "marketing",
+      "name": "org-marketing",
       "source": "./plugins/marketing",
       "description": "Positioning, content strategy and production, social and video, brand voice, copywriting, PR, and partnerships.",
       "version": "1.0.0",
